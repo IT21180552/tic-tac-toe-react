@@ -1,8 +1,8 @@
-import "./css/board.css";
+import "./board.css";
 import {useState,useEffect,useRef} from 'react';
 
 const Board = ({reset,setReset,winner,setWinner}) => {
-    const[turn,setTurn] = useState(O);
+    const[turn,setTurn] = useState(0);
     const[data,setData] = useState(['', '', '', '', '','', '', '', '']);
 
     const boardRef = useRef(null);

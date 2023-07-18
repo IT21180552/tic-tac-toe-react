@@ -2,14 +2,14 @@
 import Board from './Board';
 import Info from './Info';
 
-import './css/App.css';
+import './app.css';
 import {useState} from 'react';
 
 function App(){
-    const [rest,setState] = useState(false);
+    const [reset,setReset] = useState(false);
     const [winner,setWinner] = useState('');
 
-    const restBoard = () => {
+    const resetBoard = () => {
         setReset(true);
     }
 
